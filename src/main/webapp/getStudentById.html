@@ -21,7 +21,7 @@ Student Id : <input type="text" ng-model="studentId">
 <table border="width:300px" style="text-align:center">
 <th><td>Student Data</td></th>
 
-<tr><td>Student Name </td><td> {{student['first_name']}}</td></tr>
+<tr><td>Student Name </td><td> {{student}}</td></tr>
 <tr><td>Student ID </td><td> {{student['User_Email']}}</td></tr>
 <tr><td>Student Mobile </td><td> {{student['last_name']}}</td></tr>
 <tr><td>Message</td><td> {{messageCallback}}</td></tr>
@@ -31,7 +31,7 @@ Student Id : <input type="text" ng-model="studentId">
 
 <script>
 // GET DATA based on Student Id 
-var baseUrl = "http://localhost:8080/RestEasyLearning-Project/app/students/";
+var baseUrl = "http://localhost:8080/RestHibernate-Project/app/students/";
 
 var app = angular.module("studentApp",[])
 app.controller("studentController", function($scope,$http){
